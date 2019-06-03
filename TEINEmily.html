@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <!--tag responsiva do bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Trabalho TEIN</title>
+    </head>
+    <body>
+      <!--JS, Jquery, Popper.js, Bootstrap-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <!---Introdução-->
+      <h2 style="text-align: center; color:#551A8B;"><img src="https://hackr.io/tutorials/bootstrap/logo-bootstrap.svg?ver=1555328097" width="30" height="30" class="d-inline-block align-bottom" alt=""> GUIA BOOTSTRAP</h2>
+
+      <div class= "container">
+        <p style="text-align: center;">O Bootstrap é uma ferramenta gratuita para desenvolvimento HTML, CSS e JS.
+        O framework tem o objetivo de criar projetos responsivos para dispositivos móveis na web.
+        Possui uma diversidade de componentes em JavaScript (jQuery) para serem implementados apenas acrescentando algumas configurações no código, sem a necessidade de criar scripts e mais scripts.</p>
+      </div>
+
+      <!---Importações-->
+
+      <div class= "container">
+        <h4>Adicionando o Bootstrap a um projeto</h4>
+        <p>Para adicionar o Bootstrap rapidamente a um projeto basta adicionar algumas tags no seu arquivo HTML.</p>
+        <h5>Tag responsiva <small> (Dentro da tag HEAD)</small>:</h5>
+        <p style="text-align: center;">&lsaquo;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&rsaquo;</p>
+        <h5>CSS <small> (Dentro da tag HEAD)</small>:</h5>
+        <p style="text-align: center;"> &lsaquo;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&rsaquo;</p>
+        <h5>JS <small> (Dentro da tag BODY)</small>: </h5>
+        <p style="text-align: center;">
+          <strong> 1.</strong> &lsaquo;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&rsaquo;</script>
+          <br><strong> 2.</strong> &lsaquo;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"&rsaquo;</script>
+          <br><strong> 3.</strong> &lsaquo;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"&rsaquo;</script>
+        </p>
+      </div>
+
+      <!---Cores-->
+
+      <div class="container">
+        <h4>Cores no Bootstrap</h4>
+        <p>As cores do bootstrap são importadas com o link do CSS e podem ser utilizadas em TODOS os componentes Bootstrap, incluindo textos.</p>
+        <div class="bg-primary text-white">Bg Primary, Texto White</div>
+        <div class="bg-success text-white">Bg Success, Texto White</div>
+        <div class="bg-danger text-white">Bg Danger, Texto White</div>
+        <div class="bg-warning text-dark">Bg Warning, Texto Dark</div>
+        <div class="bg-info text-dark">Bg Info, Texto Dark</div>
+        <div class="bg-dark text-white">Bg Dark, Texto White</div>
+        <div class="bg-light text-primary">Bg White, Texto Primary</div>
+        <p>
+          <br>&lsaquo;div class="bg-primary text-white"&rsaquo;Bg Primary, Texto White&lsaquo;/div&rsaquo;
+          <br>&lsaquo;div class="bg-success text-white"&rsaquo;Bg Success, Texto White&lsaquo;/div&rsaquo;
+          <br>&lsaquo;div class="bg-danger text-white"&rsaquo;Bg Danger, Texto White&lsaquo;/div&rsaquo;
+          <br>&lsaquo;div class="bg-warning text-dark"&rsaquo;Bg Warning, Texto Dark&lsaquo;/div&rsaquo;
+          <br>&lsaquo;div class="bg-info text-dark"&rsaquo;Bg Info, Texto Dark&lsaquo;/div&rsaquo;
+          <br>&lsaquo;div class="bg-dark text-white"&rsaquo;Bg Dark, Texto White&lsaquo;/div&rsaquo;
+          <br>&lsaquo;div class="bg-light text-primary"&rsaquo;Bg White, Texto Primary&lsaquo;/div&rsaquo;
+        </p>
+      </div>
+
+      <!---Componentes-->
+
+      <div class= "container">
+
+        <h4>Exemplificando o uso de componentes</h4>
+        <h5>BOTÕES</h5>
+          <button type="button" class="btn btn-primary">Botão preenchido</button> <p>&lsaquo;button type="button" class="btn btn-primary"&rsaquo; Nome do botão &lsaquo;/button&rsaquo; </p>
+          <button type="button" class="btn btn-outline-primary">Botão outline</button> <p>&lsaquo;button type="button" class="btn btn-outline-primary"&rsaquo; Nome do botão &lsaquo;/button&rsaquo; </p>
+          <button type="button" class="btn btn-primary btn-lg">Botão grande preenchido</button> <p>&lsaquo;button type="button" class="btn btn-primary btn-lg"&rsaquo; Nome do botão &lsaquo;/button&rsaquo; </p>
+          <button type="button" class="btn btn-outline-primary btn-sm">Botão pequeno outline</button> <p>&lsaquo;button type="button" class="btn btn-outline-primary btn-sm"&rsaquo; Nome do botão &lsaquo;/button&rsaquo; </p>
+        <h6>Mais sobre Botões: https://getbootstrap.com.br/docs/4.1/components/buttons/</h6>
+
+        <h5>ALERTAS</h5>
+          <div class="alert alert-warning" role="alert"> &lsaquo;div class="alert alert-warning" role="alert"&rsaquo; Conteúdo do alerta Warning &lsaquo;/div&rsaquo; </div>
+          <div class="alert alert-danger" role="alert"> &lsaquo;div class="alert alert-danger" role="alert"&rsaquo; Conteúdo do alerta Danger &lsaquo;/div&rsaquo; </div>
+          <div class="alert alert-info" role="alert"> &lsaquo;div class="alert alert-info" role="alert"&rsaquo; Conteúdo do alerta Info &lsaquo;/div&rsaquo; </div>
+        <h6>Mais sobre Alertas: https://getbootstrap.com.br/docs/4.1/components/alerts/</h6>
+
+
+        <h5>NavBars</h5>
+        <h6>Imagem+Marca</h6>
+        <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="http://www.ornellas.com.br/wp-content/uploads/2016/02/maxresdefault.jpg" width="30" height="30" class="d-inline-block align-top" alt="">NavBar Light</a>
+        </nav>
+        <p>
+          &lsaquo;nav class="navbar navbar-light bg-light">
+              <br>&lsaquo;a class="navbar-brand" href="#"&rsaquo; &lsaquo;img src="caminho da imagem" width="30" height="30" class="d-inline-block align-top" alt="" &rsaquo; NAVBAR LIGHT &lsaquo;/a&rsaquo;
+           <br>&lsaquo;/nav&rsaquo;
+        </p>
+
+        <h6>Cores e estilos</h6>
+          <nav class="navbar navbar-light bg-warning">
+            <a class="navbar-brand" href="#">Navbar Warning Large</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="https://sigaa.ifal.edu.br"> SIGAA </a>
+                </div>
+              </div>
+          </nav>
+          <p>
+            &lsaquo;nav class="navbar navbar-light bg-warning"&rsaquo;
+              <br>&lsaquo;a class="navbar-brand" href="#"&rsaquo;Navbar Warning Large&lsaquo;/a&rsaquo;
+                <br>&lsaquo;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação"&rsaquo;
+                  <br>&lsaquo;span class="navbar-toggler-icon">&lsaquo;/span&rsaquo;
+                <br>&lsaquo;/button&rsaquo;
+                <br>&lsaquo;div class="collapse navbar-collapse" id="navbarNavAltMarkup"&rsaquo;
+                  <br>&lsaquo;div class="navbar-nav"&rsaquo;
+                    <br>&lsaquo;a class="nav-item nav-link active" href="#"> Pagina &lsaquo;/a&rsaquo;
+                  <br>&lsaquo;/div&rsaquo;
+                <br>&lsaquo;/div&rsaquo;
+            <br>&lsaquo;/nav&rsaquo;
+          </p>
+
+          <nav class="navbar navbar-expand-sm navbar-light bg-danger">
+            <a class="navbar-brand" href="#">Navbar Danger Small</a>
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="https://www2.ifal.edu.br/"> IFAL </a>
+              </div>
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="https://ufal.br/"> UFAL </a>
+              </div>
+          </nav>
+          <p>
+            &lsaquo;nav class="navbar navbar-expand-sm navbar-light bg-danger"&rsaquo;
+              <br>&lsaquo;a class="navbar-brand" href="#">Navbar Danger Small&lsaquo;/a&rsaquo;
+                <br>&lsaquo;div class="navbar-nav"&rsaquo;
+                  <br>&lsaquo;a class="nav-item nav-link active" href="#"&rsaquo; Pagina1 &lsaquo;/a&rsaquo;
+                <br>&lsaquo;/div&rsaquo;
+                <br>&lsaquo;div class="navbar-nav"&rsaquo;
+                  <br>&lsaquo;a class="nav-item nav-link active" href="#"&rsaquo; Pagina2 &lsaquo;/a&rsaquo;
+                <br>&lsaquo;/div&rsaquo;
+            <br>&lsaquo;/nav&rsaquo;
+          </p>
+          <h6>Mais sobre NavBars: https://getbootstrap.com.br/docs/4.1/components/navbar/</h6>
+
+          <h5>INPUTS</h5>
+          <form>
+            <div class="form-group">
+              <label>Endereço de email: </label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+              <label>Senha: </label>
+              <input type="password" class="form-control form-control-sm" placeholder="Senha (Small)">
+              <label>Comentário: </label>
+              <input type="text" class="form-control form-control-lg" placeholder="Comentário (Large)">
+            </div>
+            <p>
+              &lsaquo;form&rsaquo;
+                <br>&lsaquo;div class="form-group"&rsaquo;
+                  <br>&lsaquo;label&rsaquo;Endereço de email: &lsaquo;/label&rsaquo;
+                  <br>&lsaquo;input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email"&rsaquo;
+                  <br>&lsaquo;label&rsaquo;Senha: &lsaquo;/label&rsaquo;
+                  <br>&lsaquo;input type="password" class="form-control form-control-sm" placeholder="Senha (Small)"&rsaquo;
+                  <br>&lsaquo;label&rsaquo;Comentário: &lsaquo;/label&rsaquo;
+                  <br>&lsaquo;input type="text" class="form-control form-control-lg" placeholder="Comentário (Large)"&rsaquo;
+                <br>&lsaquo;/div&rsaquo;
+              <br>&lsaquo;form&rsaquo;
+            </p>
+
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label">Marcando um termo</label>
+            </div>
+            <p>
+              &lsaquo;form&rsaquo;
+                <br>&lsaquo;div class="form-group form-check"&rsaquo;
+                  <br>&lsaquo;input type="checkbox" class="form-check-input"&rsaquo;
+                  <br>&lsaquo;label class="form-check-label"&rsaquo;Marcando um termo&lsaquo;/label&rsaquo;
+                <br>&lsaquo;/div&rsaquo;
+              <br>&lsaquo;/form&rsaquo;
+            </p>
+
+            <button type="submit" class="btn btn-success">Enviar</button>
+            <p>&lsaquo;button type="submit" class="btn btn-success"&rsaquo;Enviar&lsaquo;/button&rsaquo;</p>
+        </form>
+        <h6>Mais sobre Formulários: https://getbootstrap.com.br/docs/4.1/components/forms/</h6>
+
+        <h5>GRIDS</h5>
+        <h6>Colunas de mesmo tamanho</h6>
+        <div class="row">
+          <div class="col-sm" style="background-color: #FFDAB9">Coluna</div>
+          <div class="col-sm" style="background-color: #FFFACD">Coluna</div>
+          <div class="col-sm" style="background-color: #FFDAB9">Coluna</div>
+        </div>
+        <p>
+          &lsaquo;div class="row"&rsaquo;
+            <br>&lsaquo;div class="col-sm" style="background-color: #FFDAB9"&rsaquo;Coluna&lsaquo;/div&rsaquo;
+            <br>&lsaquo;div class="col-sm" style="background-color: #FFFACD"&rsaquo;Coluna&lsaquo;/div&rsaquo;
+            <br>&lsaquo;div class="col-sm" style="background-color: #FFDAB9"&rsaquo;Coluna&lsaquo;/div&rsaquo;
+          <br>&lsaquo;/div&rsaquo;
+        </p>
+
+        <h6>Colunas de tamanhos diferentes</h6>
+        <div class="row">
+          <div class="col-6" style="background-color: #FFD39B">Coluna tamanho 6</div>
+          <div class="col-4" style="background-color: #FFDAB9">Coluna tamanho 4</div>
+          <div class="col-2" style="background-color: #FFFACD">Coluna tamanho 2</div>
+        </div>
+        <p>
+          &lsaquo;div class="row"&rsaquo;
+            <br>&lsaquo;div class="col-6" style="background-color: #FFD39B"&rsaquo;Coluna tamanho 6&lsaquo;/div&rsaquo;
+            <br>&lsaquo;div class="col-4" style="background-color: #FFDAB9"&rsaquo;Coluna tamanho 4&lsaquo;/div&rsaquo;
+            <br>&lsaquo;div class="col-2" style="background-color: #FFFACD"&rsaquo;Coluna tamanho 2&lsaquo;/div&rsaquo;
+          <br>&lsaquo;/div&rsaquo;
+        </p>
+        <h6>Mais sobre Grids: https://getbootstrap.com.br/docs/4.1/layout/grid/</h6>
+
+        <h5>TABELAS</h5>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col-8">Nome</th>
+              <th scope="col-4">Telefone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lula</td>
+              <td>55012(41)33389145</td>
+            </tr>
+            <tr>
+              <td>Bolsonario</td>
+              <td>55021(61)991520874</td>
+            </tr>
+            <tr>
+              <td>Temer</td>
+              <td>55012(11)33547825</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <br>&lsaquo;table class="table"&rsaquo;
+            <br>&lsaquo;thead class="thead-dark"&rsaquo;
+              <br>&lsaquo;tr&rsaquo;
+              <br>&lsaquo;th scope="col-8"&rsaquo;Nome&lsaquo;/th&rsaquo;
+                <br>&lsaquo;th scope="col-4"&rsaquo;Telefone&lsaquo;/th&rsaquo;
+              <br>&lsaquo;/tr&rsaquo;
+            <br>&lsaquo;/thead&rsaquo;
+            <br>&lsaquo;tbody&rsaquo;
+              <br>&lsaquo;tr&rsaquo;
+                <br>&lsaquo;td&rsaquo;Nome 1&lsaquo;/td&rsaquo;
+                <br>&lsaquo;td&rsaquo;Telefone 1&lsaquo;/td&rsaquo;
+              <br>&lsaquo;/tr&rsaquo;
+              <br>&lsaquo;tr&rsaquo;
+                <br>&lsaquo;td&rsaquo;Nome 2&lsaquo;/td&rsaquo;
+                <br>&lsaquo;td&rsaquo;Telefone 2&lsaquo;/td&rsaquo;
+              <br>&lsaquo;/tr&rsaquo;
+              <br>&lsaquo;tr&rsaquo;
+                <br>&lsaquo;td&rsaquo;Nome 3&lsaquo;/td&rsaquo;
+                <br>&lsaquo;td&rsaquo;Telefone 3&lsaquo;/td&rsaquo;
+              <br>&lsaquo;/tr&rsaquo;
+            <br>&lsaquo;/tbody&rsaquo;
+          <br>&lsaquo;/table&rsaquo;
+        </p>
+        <h6>Mais sobre Tabelas: https://getbootstrap.com.br/docs/4.1/content/tables/</h6>
+
+        <h5>CAROUSEL</h5>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-slide-to="0" class="active"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://abrilexame.files.wordpress.com/2017/05/2017-05-18t193221z_1431849589_rc128bf9c7e0_rtrmadp_3_brazil-corruption-temer.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://tercalivre.com.br/wp-content/uploads/2018/02/LULA1.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="http://rrinterativo.com.br/wp-content/uploads/2018/10/bolsonaro-1-600x361.jpg">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+        <br><p><strong>Com indicadores e controles</strong>
+          <br>&lsaquo;div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"&rsaquo;
+            <br>&lsaquo;ol class="carousel-indicators"&rsaquo;
+              <br>&lsaquo;li data-slide-to="0" class="active"&rsaquo;&lsaquo;/li&rsaquo;
+              <br>&lsaquo;li data-slide-to="1">&lsaquo;/li&rsaquo;
+              <br>&lsaquo;li data-slide-to="2">&lsaquo;/li&rsaquo;
+            <br>&lsaquo;/ol&rsaquo;
+            <br>&lsaquo;div class="carousel-inner"&rsaquo;
+              <br>&lsaquo;div class="carousel-item active"&rsaquo;
+                <br>&lsaquo;img class="d-block w-100" src="CAMINHO PARA A IMAGEM 1"&rsaquo;
+              <br>&lsaquo;/div&rsaquo;
+              <br>&lsaquo;div class="carousel-item"&rsaquo;
+                <br>&lsaquo;img class="d-block w-100" src="CAMINHO PARA A IMAGEM 2"&rsaquo;
+              <br>&lsaquo;/div&rsaquo;
+              <br>&lsaquo;div class="carousel-item"&rsaquo;
+                <br>&lsaquo;img class="d-block w-100" src="CAMINHO PARA A IMAGEM 3"&rsaquo;
+              <br>&lsaquo;/div&rsaquo;
+            <br>&lsaquo;/div&rsaquo;
+            <br>&lsaquo;a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"&rsaquo;
+              <br>&lsaquo;span class="carousel-control-prev-icon" aria-hidden="true"&rsaquo;&lsaquo;/span&rsaquo;
+              <br>&lsaquo;span class="sr-only">Anterior&lsaquo;/span&rsaquo;
+            <br>&lsaquo;/a&rsaquo;
+            <br>&lsaquo;a class="carousel-control-next"  href="#carouselExampleIndicators" role="button" data-slide="next"&rsaquo;
+              <br>&lsaquo;span class="carousel-control-next-icon" aria-hidden="true">&lsaquo;/span&rsaquo;
+              <br>&lsaquo;span class="sr-only">Próximo&lsaquo;/span&rsaquo;
+            <br>&lsaquo;/a&rsaquo;
+          <br>&lsaquo;/div&rsaquo;
+        </p>
+        <h6>Mais sobre Carousel:https://getbootstrap.com.br/docs/4.1/components/carousel/</h6>
+
+      </div>
+      <div class="footer" style="text-align:center; background-color:#FF8C69;">
+        Emily Brito de Oliveira - 914A
+      </div>
+    </body>
+</html>
